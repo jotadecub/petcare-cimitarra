@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2F4B7C">
+  <meta name="description" content="Indicadores de actividad del veterinario: solicitudes abiertas, atendidas en el mes y urgentes.">
+  <title>Resumen · PetCare Cimitarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="navbar">
+    <div class="navbar__inner">
+      <h1 class="navbar__title">Resumen</h1>
+    </div>
+  </header>
+
+  <main id="contenido" class="container">
+    <div class="stack stack--lg">
+      <dl class="stats">
+        <div class="card stat">
+          <dt class="stat__label">Abiertas</dt>
+          <dd class="stat__value">7</dd>
+        </div>
+        <div class="card stat">
+          <dt class="stat__label">Atendidas (mes)</dt>
+          <dd class="stat__value">23</dd>
+        </div>
+        <div class="card stat">
+          <dt class="stat__label">Urgentes</dt>
+          <dd class="stat__value">3</dd>
+        </div>
+      </dl>
+
+      <section class="card chart" aria-labelledby="titulo-grafico">
+        <h2 class="chart__title" id="titulo-grafico">Solicitudes atendidas · últimas 7 semanas</h2>
+        <div class="chart__bars" role="img" aria-label="Gráfico de barras con las solicitudes atendidas en cada una de las últimas 7 semanas">
+          <span class="chart__bar" style="--h: 40px"></span>
+          <span class="chart__bar" style="--h: 70px"></span>
+          <span class="chart__bar" style="--h: 55px"></span>
+          <span class="chart__bar" style="--h: 90px"></span>
+          <span class="chart__bar" style="--h: 65px"></span>
+          <span class="chart__bar" style="--h: 80px"></span>
+          <span class="chart__bar" style="--h: 50px"></span>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2F4B7C">
+  <meta name="description" content="Guía de estilos de PetCare Cimitarra: colores, tipografía y componentes implementados en CSS a partir del UI Kit de Figma.">
+  <title>Guía de estilos · PetCare Cimitarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="navbar navbar--wide">
+    <div class="navbar__inner">
+      <h1 class="navbar__title">Guía de estilos</h1>
+    </div>
+  </header>
+
+  <main id="contenido" class="container container--wide">
+    <div class="stack stack--lg">
+      <section class="stack stack--sm" aria-labelledby="k-colores">
+        <h2 class="title-h3" id="k-colores">Colores</h2>
+        <ul class="kit-swatches">
+          <li class="kit-swatch">
+            <span class="kit-swatch__color" style="background: var(--color-primary)"></span>
+            <span class="kit-swatch__name">color/primary</span>
+            <span class="kit-swatch__hex">#2F4B7C</span>
+          </li>
+          <li class="kit-swatch">
+            <span class="kit-swatch__color" style="background: var(--color-primary-light)"></span>
+            <span class="kit-swatch__name">color/primary-light</span>
+            <span class="kit-swatch__hex">#DCE9F7</span>
+          </li>
+          <li class="kit-swatch">
+            <span class="kit-swatch__color" style="background: var(--color-urgent)"></span>
+            <span class="kit-swatch__name">color/urgent</span>
+            <span class="kit-swatch__hex">#A8302A</span>
+          </li>
+          <li class="kit-swatch">
+            <span class="kit-swatch__color" style="background: var(--color-urgent-light)"></span>
+            <span class="kit-swatch__name">color/urgent-light</span>
+            <span class="kit-swatch__hex">#F6D9D7</span>
+          </li>
+          <li class="kit-swatch">
+            <span class="kit-swatch__color" style="background: var(--color-surface)"></span>
+            <span class="kit-swatch__name">color/surface</span>
+            <span class="kit-swatch__hex">#FFFFFF</span>
+          </li>
+          <li class="kit-swatch">
+            <span class="kit-swatch__color" style="background: var(--color-background)"></span>
+            <span class="kit-swatch__name">color/background</span>
+            <span class="kit-swatch__hex">#F3F3F4</span>
+          </li>
+          <li class="kit-swatch">
+            <span class="kit-swatch__color" style="background: var(--color-text-primary)"></span>
+            <span class="kit-swatch__name">color/text-primary</span>
+            <span class="kit-swatch__hex">#1A1A1A</span>
+          </li>
+          <li class="kit-swatch">
+            <span class="kit-swatch__color" style="background: var(--color-text-secondary)"></span>
+            <span class="kit-swatch__name">color/text-secondary</span>
+            <span class="kit-swatch__hex">#666666</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="stack stack--sm" aria-labelledby="k-tipografia">
+        <h2 class="title-h3" id="k-tipografia">Tipografía · Inter</h2>
+        <div class="card stack stack--sm">
+          <p class="kit-spec"><span class="title-h1">Hola, Álvaro</span><span class="caption">Heading/H1 · Bold 28/34</span></p>
+          <p class="kit-spec"><span class="title-h2">Solicitudes abiertas</span><span class="caption">Heading/H2 · Semi Bold 22/28</span></p>
+          <p class="kit-spec"><span class="title-h3">Mis animales</span><span class="caption">Heading/H3 · Semi Bold 17/22</span></p>
+          <p class="kit-spec"><span>Decaído, sin comer hace dos días</span><span class="caption">Body/Default · Regular 14/20</span></p>
+          <p class="kit-spec"><span class="caption">Vereda La Unión · Hoy</span><span class="caption">Body/Caption · Regular 12/16</span></p>
+        </div>
+      </section>
+
+      <section class="stack stack--sm" aria-labelledby="k-botones">
+        <h2 class="title-h3" id="k-botones">Botones</h2>
+        <div class="kit-row">
+          <button class="btn btn--primary" type="button">Publicar solicitud</button>
+          <button class="btn btn--secondary" type="button">Cancelar</button>
+          <button class="btn btn--primary" type="button" disabled>Publicar solicitud</button>
+        </div>
+      </section>
+
+      <section class="stack stack--sm" aria-labelledby="k-campos">
+        <h2 class="title-h3" id="k-campos">Campos de formulario y etiquetas</h2>
+        <div class="kit-grid">
+          <div class="field">
+            <label class="field__label" for="k-input">Etiqueta del campo</label>
+            <input class="input" id="k-input" type="text" placeholder="Texto de ejemplo">
+          </div>
+          <div class="field">
+            <label class="field__label" for="k-textarea">Etiqueta del campo</label>
+            <textarea class="input" id="k-textarea" rows="2" placeholder="Ej: lleva dos días sin comer bien y decaído..."></textarea>
+          </div>
+        </div>
+        <div class="kit-row">
+          <span class="tag tag--urgent">Urgente</span>
+          <span class="tag tag--normal">Normal</span>
+        </div>
+      </section>
+
+      <section class="stack stack--sm" aria-labelledby="k-tarjetas">
+        <h2 class="title-h3" id="k-tarjetas">Tarjetas, encabezado y avatar</h2>
+        <div class="kit-grid">
+          <article class="card card--stack">
+            <div class="card__head">
+              <h3 class="card__title">Firulais · Perro</h3>
+              <span class="tag tag--urgent">Urgente</span>
+            </div>
+            <p class="card__text">Decaído, sin comer hace 2 días</p>
+            <p class="card__meta">Vereda La Unión · Hoy</p>
+            <button class="btn btn--secondary" type="button">Proponer fecha</button>
+          </article>
+          <div class="stack">
+            <div class="kit-preview">
+              <div class="navbar"><div class="navbar__inner"><p class="navbar__title">Título de pantalla</p></div></div>
+            </div>
+            <div class="kit-preview">
+              <div class="navbar"><div class="navbar__inner"><p class="navbar__title">Título de pantalla</p><span aria-hidden="true">+</span></div></div>
+            </div>
+            <div class="kit-row">
+              <span class="avatar" aria-hidden="true"></span>
+              <span class="avatar avatar--sm" aria-hidden="true"></span>
+              <span class="caption">Avatar 44 px y 40 px</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

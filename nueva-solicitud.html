@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2F4B7C">
+  <meta name="description" content="Publica la situación de tu animal para que los veterinarios te propongan una fecha de atención.">
+  <title>Nueva solicitud · PetCare Cimitarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="navbar">
+    <div class="navbar__inner">
+      <h1 class="navbar__title">Nueva solicitud</h1>
+    </div>
+  </header>
+
+  <main id="contenido" class="container">
+    <form class="form" action="mis-solicitudes.html" method="get">
+      <h2 class="title-h2">Publicar solicitud</h2>
+
+      <div class="field">
+        <label class="field__label" for="animal">Animal</label>
+        <select class="input" id="animal" name="animal">
+          <option>Firulais (perro)</option>
+          <option>Michi (gato)</option>
+          <option>Lote 40 novillos (ganado)</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="motivo">Motivo de la atención</label>
+        <textarea class="input" id="motivo" name="motivo" rows="2" placeholder="Ej: lleva dos días sin comer bien y decaído..."></textarea>
+      </div>
+
+      <fieldset class="field">
+        <legend class="field__label">Urgencia</legend>
+        <div class="chips">
+          <label class="tag-option">
+            <input class="tag-option__input" type="radio" name="urgencia" value="normal" checked>
+            <span class="tag tag--normal">Normal</span>
+          </label>
+          <label class="tag-option">
+            <input class="tag-option__input" type="radio" name="urgencia" value="urgente">
+            <span class="tag tag--urgent">Urgente</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div><button class="btn btn--primary" type="submit">Publicar solicitud</button></div>
+    </form>
+  </main>
+</body>
+</html>

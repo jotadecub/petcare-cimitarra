@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2F4B7C">
+  <meta name="description" content="Consulta y busca tus mascotas y lotes de ganado registrados.">
+  <title>Mis animales · PetCare Cimitarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="navbar">
+    <div class="navbar__inner">
+      <h1 class="navbar__title">Mis animales</h1>
+      <button class="navbar__action" type="button" aria-label="Agregar animal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+    </div>
+  </header>
+
+  <main id="contenido" class="container">
+    <div class="stack stack--lg">
+      <form class="field" role="search" action="animales.html" method="get">
+        <label class="field__label" for="buscar">Buscar</label>
+        <input class="input" id="buscar" name="q" type="search" placeholder="Buscar por nombre..." autocomplete="off">
+        <button class="sr-only" type="submit">Buscar</button>
+      </form>
+
+      <ul class="card-list">
+        <li>
+          <a class="card card--link" href="historial.html">
+            <span class="avatar avatar--sm" aria-hidden="true"></span>
+            <span class="animal__info">
+              <span class="animal__name">Firulais</span>
+              <span class="animal__meta">Perro · Casa</span>
+            </span>
+            <span class="chevron" aria-hidden="true">›</span>
+          </a>
+        </li>
+        <li>
+          <a class="card card--link" href="historial.html">
+            <span class="avatar avatar--sm" aria-hidden="true"></span>
+            <span class="animal__info">
+              <span class="animal__name">Michi</span>
+              <span class="animal__meta">Gato · Casa</span>
+            </span>
+            <span class="chevron" aria-hidden="true">›</span>
+          </a>
+        </li>
+        <li>
+          <a class="card card--link" href="historial.html">
+            <span class="avatar avatar--sm" aria-hidden="true"></span>
+            <span class="animal__info">
+              <span class="animal__name">Lote 40 novillos</span>
+              <span class="animal__meta">Ganado · Finca La Esperanza</span>
+            </span>
+            <span class="chevron" aria-hidden="true">›</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2F4B7C">
+  <meta name="description" content="Resumen de tus animales y de tus solicitudes de atención veterinaria.">
+  <title>Panel principal · PetCare Cimitarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="navbar">
+    <div class="navbar__inner">
+      <h1 class="navbar__title">Hola, Álvaro</h1>
+    </div>
+  </header>
+
+  <main id="contenido" class="container container--fab">
+    <div class="stack stack--lg">
+      <a class="alert alert--urgent" href="mis-solicitudes.html">Tienes 1 solicitud urgente sin propuestas</a>
+
+      <section class="stack stack--sm" aria-labelledby="titulo-animales">
+        <h2 class="title-h3" id="titulo-animales">Mis animales y solicitudes</h2>
+        <ul class="card-list">
+          <li>
+            <a class="card card--link" href="historial.html">
+              <span class="avatar" aria-hidden="true"></span>
+              <span class="animal__info">
+                <span class="animal__name">Firulais · Perro</span>
+                <span class="animal__meta">1 solicitud en curso</span>
+              </span>
+              <span class="chevron" aria-hidden="true">›</span>
+            </a>
+          </li>
+          <li>
+            <a class="card card--link" href="animales.html">
+              <span class="avatar" aria-hidden="true"></span>
+              <span class="animal__info">
+                <span class="animal__name">Lote 40 novillos</span>
+                <span class="animal__meta">Sin solicitudes activas</span>
+              </span>
+              <span class="chevron" aria-hidden="true">›</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <a class="fab" href="nueva-solicitud.html" aria-label="Nueva solicitud"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a>
+</body>
+</html>

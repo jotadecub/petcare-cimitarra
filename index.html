@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2F4B7C">
+  <meta name="description" content="Ingresa a PetCare Cimitarra para publicar solicitudes de atención veterinaria y consultar el historial de tus animales.">
+  <title>Iniciar sesión · PetCare Cimitarra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="navbar">
+    <div class="navbar__inner">
+      <h1 class="navbar__title">PetCare Cimitarra</h1>
+    </div>
+  </header>
+
+  <main id="contenido" class="container">
+    <form class="form" action="panel.html" method="get" data-role-form novalidate>
+      <h2 class="title-h2">Iniciar sesión</h2>
+
+      <div class="field">
+        <label class="field__label" for="correo">Correo electrónico</label>
+        <input class="input" id="correo" type="email" placeholder="nombre@correo.com" autocomplete="email" inputmode="email">
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="clave">Contraseña</label>
+        <input class="input" id="clave" type="password" placeholder="••••••••" autocomplete="current-password">
+      </div>
+
+      <fieldset class="field">
+        <legend class="field__label">Soy:</legend>
+        <div class="chips">
+          <label class="chip">
+            <input class="chip__input" type="radio" name="rol" value="dueno" checked>
+            <span class="chip__label">Dueño / Ganadero</span>
+          </label>
+          <label class="chip">
+            <input class="chip__input" type="radio" name="rol" value="veterinario">
+            <span class="chip__label">Veterinario</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div><button class="btn btn--primary" type="submit">Ingresar</button></div>
+
+      <p class="divider" aria-hidden="true">— o —</p>
+
+      <div><a class="btn btn--secondary" href="registro.html">Crear una cuenta nueva</a></div>
+    </form>
+  </main>
+
+  <script src="js/role-redirect.js" defer></script>
+</body>
+</html>
